@@ -30,12 +30,12 @@ const Home = () => {
           height: "16vh",
           width: "16vh",
           overflow: "hidden",
-          borderBottomLeftRadius: "50% 50%",
-          borderBottomRightRadius: "50% 50%",
-          borderTopLeftRadius: "50% 50%",
-          borderTopRightRadius: "50% 50%",
+          // borderBottomLeftRadius: "50% 50%",
+          // borderBottomRightRadius: "50% 50%",
+          // borderTopLeftRadius: "50% 50%",
+          // borderTopRightRadius: "50% 50%",
           border: "2px solid red",
-          // borderRadius: "50%",
+          borderRadius: "50%",
         }}
       />
     );
