@@ -11,7 +11,7 @@ const Home = () => {
         style={{
           backgroundColor: "white",
           height: "100vh",
-          border: "1px solid black",
+          border: "",
           padding: "5%",
           // margin: "0",
         }}
@@ -21,12 +21,17 @@ const Home = () => {
           style={{
             width: "100%",
             border: "2px solid #00FFAB",
+            boxShadow: "0px 0px 15px -5px slategray",
+            borderBottomWidth: "5px",
+            borderTopWidth: "5px",
+            borderRadius: "20px",
           }}
         >
           <div className="card-header">
-            <span
+            <div
               style={{
                 float: "left",
+                width: "50%",
               }}
             >
               <img
@@ -38,10 +43,12 @@ const Home = () => {
                   borderRadius: "50%",
                 }}
               />
-            </span>
-            <span
+            </div>
+            <div
               style={{
                 float: "right",
+                width: "50%",
+                textAlign: "center",
               }}
             >
               <img
@@ -54,11 +61,12 @@ const Home = () => {
                   marginRight: "1vh",
                 }}
               />
-            </span>
+            </div>
           </div>
           <div className="card-body">
             <div>
               <div
+                className="text-center"
                 style={{
                   float: "left",
                   width: "50%",
@@ -73,23 +81,23 @@ const Home = () => {
                 />
               </div>
               <div
+                className="text-center"
                 style={{
                   float: "right",
                   width: "50%",
                 }}
               >
-                <div className="text-center">
-                  <img
-                    src={dummyDp}
-                    style={{
-                      height: "16vh",
-                      width: "16vh",
-                      border: "2px solid red",
-                      borderRadius: "50%",
-                    }}
-                  />
-                </div>
-                <div className="text-center">Sayak Mukhopadhyay</div>
+                <img
+                  src={dummyDp}
+                  style={{
+                    height: "16vh",
+                    width: "16vh",
+                    border: "2px solid red",
+                    borderRadius: "50%",
+                  }}
+                />
+                <br />
+                <h5 className="m-1">Sayak Mukhopadhyay</h5>
               </div>
             </div>
             <div
@@ -112,13 +120,26 @@ const Home = () => {
                 fontFamily: "'Nunito', sans-serif",
               }}
             >
-              When there are tears, you are a shoulder. When there is a pain,
-              you are a medicine..
+              When there are tears, you are a shoulder.
+              <br />
+              When there is a pain, you are a medicine..
             </div>
             <div className="mt-2">
               <h2>THANK YOU DOCTORS</h2>
             </div>
           </div>
+        </div>
+        <div className="text-center mt-3">
+          <button
+            className="btn btn-primary btn-lg"
+            style={{
+              borderRadius: "50px",
+              backgroundColor: "#00FFAB",
+              color: "black",
+            }}
+          >
+            Generate Your Card
+          </button>
         </div>
       </div>
     </div>
