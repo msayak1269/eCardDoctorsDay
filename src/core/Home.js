@@ -1,4 +1,6 @@
 import { useState } from "react";
+import html2canvas from "html2canvas";
+import downloadjs from "downloadjs";
 import jbLogo from "../img/jbLogo.jpg";
 import tagLine from "../img/tagLine.png";
 import stetho from "../img/stetho.jpg";
@@ -58,6 +60,15 @@ const Home = () => {
       );
     }
   };
+  const handleDownload = async () => {
+    console.log(1);
+    const card = document.getElementById("e-card");
+    const canvas = await html2canvas(card);
+    //console.log(canvas);
+    const imageUrl = canvas.toDataURL("image/png");
+    //console.log(imageUrl);
+    downloadjs(imageUrl, "eCardJBPharma.png", "image/png");
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -75,13 +86,14 @@ const Home = () => {
       >
         <div
           className="card mx-auto"
+          id="e-card"
           style={{
             width: "auto",
-            border: "2px solid #00FFAB",
+            border: "4px solid #00FFAB",
             boxShadow: "0px 0px 15px -5px slategray",
-            borderBottomWidth: "5px",
-            borderTopWidth: "5px",
-            borderRadius: "20px",
+            borderBottomWidth: "6px",
+            borderTopWidth: "6px",
+            borderRadius: "25px",
           }}
         >
           <div className="card-header">
@@ -214,6 +226,19 @@ const Home = () => {
             }}
           >
             Generate Your E-Card
+          </button>
+        </div>
+        <div className="text-center mt-3" id="download-button">
+          <button
+            className="btn btn-primary btn-lg"
+            style={{
+              borderRadius: "50px",
+              backgroundColor: "#00FFAB",
+              color: "black",
+            }}
+            onClick={handleDownload}
+          >
+            Download
           </button>
         </div>
         {/* Modal */}
