@@ -5,7 +5,7 @@ import stetho from "../img/stetho.jpg";
 import dummyDp from "../img/dummyDp.jpg";
 
 const Home = () => {
-  const [name, setName] = useState("Your Name");
+  const [name, setName] = useState("Dr Name");
   const [image, setImage] = useState(null);
   const [flagForDp, setFlag] = useState(false);
   const handleName = (e) => {
@@ -47,6 +47,7 @@ const Home = () => {
       return (
         <img
           src={dummyDp}
+          alt=""
           style={{
             height: "16vh",
             width: "16vh",
@@ -75,7 +76,7 @@ const Home = () => {
         <div
           className="card mx-auto"
           style={{
-            width: "100%",
+            width: "auto",
             border: "2px solid #00FFAB",
             boxShadow: "0px 0px 15px -5px slategray",
             borderBottomWidth: "5px",
@@ -161,9 +162,11 @@ const Home = () => {
               className="text-center"
               style={{
                 clear: "both",
-                fontFamily: "'Nunito', sans-serif",
+                //fontFamily: "'Caveat', cursive",
+                fontFamily: " 'League Gothic', sans-seri",
+                //fontFamily: "'Nunito', sans-serif",
                 fontWeight: "700",
-                fontSize: "230%",
+                fontSize: "190%",
                 color: "green",
               }}
             >
@@ -174,7 +177,8 @@ const Home = () => {
             <div
               style={{
                 fontFamily: "'Caveat', cursive",
-                fontFamily: "'Nunito', sans-serif",
+                fontSize: "120%",
+                //whiteSpace: "nowrap",
               }}
             >
               When there are tears, you are a shoulder.
