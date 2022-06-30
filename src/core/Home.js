@@ -163,11 +163,10 @@ const Home = () => {
               style={{
                 clear: "both",
                 //fontFamily: "'Caveat', cursive",
-                fontFamily: " 'League Gothic', sans-seri",
+                fontFamily: "'Playfair Display SC', serif",
                 //fontFamily: "'Nunito', sans-serif",
                 fontWeight: "700",
-                fontSize: "190%",
-                color: "green",
+                fontSize: "170%",
               }}
             >
               HAPPY DOCTOR'S DAY
@@ -185,7 +184,12 @@ const Home = () => {
               <br />
               When there is a pain, you are a medicine..
             </div>
-            <div className="mt-2">
+            <div
+              className="mt-2"
+              style={{
+                fontFamily: "'Playfair Display SC', serif",
+              }}
+            >
               <h2>THANK YOU DOCTORS</h2>
             </div>
           </div>
