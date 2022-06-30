@@ -215,7 +215,7 @@ const Home = () => {
           </div>
         </div>
         <div className="text-center mt-3">
-          <button
+          <a
             className="btn btn-primary btn-lg"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
@@ -226,7 +226,7 @@ const Home = () => {
             }}
           >
             Generate Your E-Card
-          </button>
+          </a>
         </div>
         <div className="text-center mt-3" id="download-button">
           <button
