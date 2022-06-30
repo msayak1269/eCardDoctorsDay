@@ -202,7 +202,7 @@ const Home = () => {
             >
               When there are tears, you are a shoulder.
               <br />
-              When there is a pain, you are a medicine..
+              When there is a pain, you are a medicine.
             </div>
             <div
               className="mt-2"
