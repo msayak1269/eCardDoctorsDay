@@ -174,10 +174,12 @@ const Home = () => {
           </div>
           <div
             className="card-footer text-center"
-            style={{
-              backgroundImage:
-                "linear-gradient(to bottom right, white , #16C79A)",
-            }}
+            style={
+              {
+                // backgroundImage:
+                //   "linear-gradient(to bottom right, white , #16C79A)",
+              }
+            }
           >
             <div
               style={{
